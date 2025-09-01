@@ -1,0 +1,5 @@
+google-cloud-storage==2.16.0
+Flask==3.0.3
+gunicorn==22.0.0
+# Explicitly list google-api-core as it's used for exception handling in main.py
+google-api-core==2.19.0

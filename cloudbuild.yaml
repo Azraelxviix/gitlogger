@@ -1,0 +1,55 @@
+# This Cloud Build pipeline builds a single container image and deploys it to two
+# distinct, specialized services, realizing the full 'Fragment and Consolidate' architecture.
+steps:
+# 1. Build the unified container image for both services.
+- name: 'gcr.io/kaniko-project/executor:latest'
+  id: 'Build Container Image'
+  args:
+  - '--destination=gcr.io/thebestever/gitlogger:latest'
+  - '--cache=true'
+  - '--cache-ttl=72h'
+
+# 2. Deploy the Ingestion Service to Cloud Run.
+# This service is optimized for high-concurrency, stateless request handling.
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  id: 'Deploy Ingestion Service'
+  entrypoint: gcloud
+  args:
+  - 'run'
+  - 'deploy'
+  - 'log-ingestion-service' # New, descriptive service name
+  - '--image=gcr.io/thebestever/gitlogger:latest'
+  - '--region=us-central1'
+  - '--platform=managed'
+  - '--no-allow-unauthenticated'
+  - '--update-env-vars=MASTER_LOG_BUCKET=kbmlog'
+  - '--service-account=knowledge-base-webhook-sa@thebestever.iam.gserviceaccount.com'
+  - '--min-instances=0'      # Optimize for cost: scale to zero when idle.
+  - '--concurrency=80'     # Optimize for performance: handle many concurrent requests per instance.
+  - '--cpu-boost'          # Optimize for responsiveness: faster cold starts.
+  waitFor:
+  - 'Build Container Image'
+
+# 3. Deploy the Consolidation Service to Cloud Functions (Gen2).
+# This service is optimized for scheduled, singleton execution.
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  id: 'Deploy Consolidation Function'
+  entrypoint: gcloud
+  args:
+  - 'functions'
+  - 'deploy'
+  - 'log-consolidation-function' # New, descriptive function name
+  - '--gen2'
+  - '--region=us-central1'
+  - '--docker-image=gcr.io/thebestever/gitlogger:latest'
+  - '--entry-point=handle_consolidation'
+  - '--trigger-schedule=* * * * *' # Simple, declarative schedule (every minute).
+  - '--trigger-location=us-central1' # Location for the underlying scheduler job.
+  - '--service-account=knowledge-base-webhook-sa@thebestever.iam.gserviceaccount.com'
+  - '--update-env-vars=MASTER_LOG_BUCKET=kbmlog'
+  - '--max-instances=1' # CRITICAL: This provides the singleton execution guarantee, replacing the need for manual locking code.
+  waitFor:
+  - 'Build Container Image'
+
+# Increased timeout to accommodate building and deploying two services.
+timeout: '1800s'

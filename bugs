@@ -1,0 +1,2600 @@
+
+  !!!!!!!!!!!!!!!!! WARNING AI - 2700 OR SO LINES OF BLOB TEXT PREPARE ACORDNGLY TO CHUNK TEXT OR READ IN SMALLER SEGEMENTS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!! WARNING AI - 2700 OR SO LINES OF BLOB TEXT PREPARE ACORDNGLY TO CHUNK TEXT OR READ IN SMALLER SEGEMENTS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!! WARNING AI - 2700 OR SO LINES OF BLOB TEXT PREPARE ACORDNGLY TO CHUNK TEXT OR READ IN SMALLER SEGEMENTS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+  !!!!!!!!!!!!!!!!! WARNING AI - 2700 OR SO LINES OF BLOB TEXT PREPARE ACORDNGLY TO CHUNK TEXT OR READ IN SMALLER SEGEMENTS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!! WARNING AI - 2700 OR SO LINES OF BLOB TEXT PREPARE ACORDNGLY TO CHUNK TEXT OR READ IN SMALLER SEGEMENTS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!! TOKEN WARNING ~!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+
+
+
+Is there any way to include error handling a graceful error handling silent error handling so it could overcome any errors mitigate any kind of weirdness like that
+
+
+
+adjust your chunking to read chunk slowly for the attachment it's just a log file but I want to see a comparison between the accuracy of the logger consolidator versus actual log explorer
+
+
+
+but most important I want to see if there's any error handling or kind of like error mitigation that it can do silent error handling like that won't produce logs but it will help it recover and help it keep up with fast pace logging even if it's a little bit slower than the log explorer I don't mind if it's a couple minutes behind just as long as it's thorough even if I had to wait 5 more minutes for it to compile I'm not saying I want to wait 5 minutes but a few minutes wait time while it so if there's a pub sub collection or Python correction or some little setting we can click Maybe it could wait after log bursts like run a consistency check Only put the consistency check if you think that's like the last resort about consistency checked it Double check for error logs right Or logs that are useful for troubleshooting What if that can be solved through proper sinks Then that's
+
+Can't we do something else isn't there some sort of other technology to make up for can we use the time imort time and like some sort of ID validation for logs ID maybe like an idea first it like goes through and it I don't know this just keeps track of the IDS that have the errors in them and then worries about the body last to match it up later I don't know
+
+
+
+
+
+
+
+I don't think can you remove any retry logic I don't think retry logic is good for something like this-- It's like either it's going to be working or not right 351 results Severity Time Summary Showing logs for last 5 minutes from 9/1/25, 2:42 AM to 9/1/25, 2:47 AM. 2025-09-01 02:46:30.996
+
+POST
+
+200
+
+130 B
+
+211 ms
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html) https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+{ httpRequest: {10} insertId: "68b56b77000334113e8d07d7" labels: {3} logName: "projects/thebestever/logs/run.googleapis.com%2Frequests" receiveTimestamp: "2025-09-01T09:46:31.222504296Z" resource: {2} severity: "INFO" spanId: "b992cdb72bb4de07" timestamp: "2025-09-01T09:46:30.996110Z" trace: "projects/thebestever/traces/8631c85b37f079a7a94dbf55a62af10d" } 2025-09-01 02:46:24.966
+
+POST
+
+200
+
+130 B
+
+244 ms
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html) https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+{ httpRequest: {10} insertId: "68b56b71000365191f34174f" labels: {3} logName: "projects/thebestever/logs/run.googleapis.com%2Frequests" receiveTimestamp: "2025-09-01T09:46:25.224103432Z" resource: {2} severity: "INFO" spanId: "32f1f9bdf34d3543" timestamp: "2025-09-01T09:46:24.966694Z" trace: "projects/thebestever/traces/8f301b49738a739ff7a864c437dbd77c" traceSampled: true } 2025-09-01 02:46:12.422 Max retries exceeded for updating master log. Log entry dropped. 2025-09-01 02:46:12.368 Max retries exceeded for updating master log. Log entry dropped. 2025-09-01 02:46:11.922 Concurrency conflict detected. Retrying attempt 5...
+
+{ insertId: "68b56b63000e11939685f70c" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:46:12.005917196Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 5..." timestamp: "2025-09-01T09:46:11.922003Z" } 2025-09-01 02:46:11.867 Concurrency conflict detected. Retrying attempt 5... 2025-09-01 02:46:11.405 Concurrency conflict detected. Retrying attempt 4... 2025-09-01 02:46:11.369 Concurrency conflict detected. Retrying attempt 4...
+
+{ insertId: "68b56b630005a3a66dd08a3e" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:46:11.673842228Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 4..." timestamp: "2025-09-01T09:46:11.369574Z" } 2025-09-01 02:46:10.984 Concurrency conflict detected. Retrying attempt 3... 2025-09-01 02:46:10.971 Concurrency conflict detected. Retrying attempt 3...
+
+{ insertId: "68b56b62000ed27473bc89a5" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:46:11.008348113Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 3..." timestamp: "2025-09-01T09:46:10.971380Z" } 2025-09-01 02:46:10.685 Concurrency conflict detected. Retrying attempt 2... 2025-09-01 02:46:10.658 Concurrency conflict detected. Retrying attempt 2... 2025-09-01 02:46:10.478 Concurrency conflict detected. Retrying attempt 1...
+
+{ insertId: "68b56b6200074c3dc7744b08" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:46:10.675309003Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 1..." timestamp: "2025-09-01T09:46:10.478269Z" } 2025-09-01 02:46:10.467 Concurrency conflict detected. Retrying attempt 1... 2025-09-01 02:46:10.301
+
+POST
+
+500
+
+172 B
+
+2.065 s
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html) https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+{ httpRequest: {10} insertId: "68b56b640005a17b916b9cdb" labels: {3} logName: "projects/thebestever/logs/run.googleapis.com%2Frequests" receiveTimestamp: "2025-09-01T09:46:12.664441122Z" resource: {2} severity: "ERROR" spanId: "242ab3d05318d744" timestamp: "2025-09-01T09:46:10.301047Z" trace: "projects/thebestever/traces/10b78c64d7fb41e76174f9eb939b8af8" } 2025-09-01 02:46:10.299
+
+POST
+
+500
+
+172 B
+
+2.121 s
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html) https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+{ httpRequest: {10} insertId: "68b56b640006750a094f21dd" labels: {3} logName: "projects/thebestever/logs/run.googleapis.com%2Frequests" receiveTimestamp: "2025-09-01T09:46:12.664441122Z" resource: {2} severity: "ERROR" spanId: "0e75b1a29ea58814" timestamp: "2025-09-01T09:46:10.299611Z" trace: "projects/thebestever/traces/f94b3bdf0378234f85783d3a859d0398" } 2025-09-01 02:46:10.257
+
+POST
+
+200
+
+130 B
+
+191 ms
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html) https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+{ httpRequest: {10} insertId: "68b56b620006e7c420c305b0" labels: {3} logName: "projects/thebestever/logs/run.googleapis.com%2Frequests" receiveTimestamp: "2025-09-01T09:46:10.665024507Z" resource: {2} severity: "INFO" spanId: "5b30574b0ae67ddb" timestamp: "2025-09-01T09:46:10.257869Z" trace: "projects/thebestever/traces/4951fe3d7ad657c036394af3bd605d91" } 2025-09-01 02:46:09.140
+
+POST
+
+200
+
+130 B
+
+209 ms
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html) https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs 2025-09-01 02:46:08.138
+
+POST
+
+200
+
+130 B
+
+243 ms
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html) https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+{ httpRequest: {10} insertId: "68b56b600005f4108a10b8a4" labels: {3} logName: "projects/thebestever/logs/run.googleapis.com%2Frequests" receiveTimestamp: "2025-09-01T09:46:08.666827922Z" resource: {2} severity: "INFO" spanId: "bf6a9235933186e8" timestamp: "2025-09-01T09:46:08.138034Z" trace: "projects/thebestever/traces/81c2b8a5b9745c073152ccfcec525849" traceSampled: true } 2025-09-01 02:45:55.628 Max retries exceeded for updating master log. Log entry dropped. 2025-09-01 02:45:55.620 Max retries exceeded for updating master log. Log entry dropped. 2025-09-01 02:45:55.595 Max retries exceeded for updating master log. Log entry dropped. 2025-09-01 02:45:55.574 Max retries exceeded for updating master log. Log entry dropped. 2025-09-01 02:45:55.506 Max retries exceeded for updating master log. Log entry dropped. 2025-09-01 02:45:55.128 Concurrency conflict detected. Retrying attempt 5... 2025-09-01 02:45:55.120 Concurrency conflict detected. Retrying attempt 5... 2025-09-01 02:45:55.095 Concurrency conflict detected. Retrying attempt 5... 2025-09-01 02:45:55.074 Concurrency conflict detected. Retrying attempt 5...
+
+{ insertId: "68b56b53000121f1379ff67f" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:45:55.347818155Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 5..." timestamp: "2025-09-01T09:45:55.074225Z" } 2025-09-01 02:45:55.006 Concurrency conflict detected. Retrying attempt 5... 2025-09-01 02:45:54.628 Concurrency conflict detected. Retrying attempt 4... 2025-09-01 02:45:54.626 Concurrency conflict detected. Retrying attempt 4... 2025-09-01 02:45:54.592 Concurrency conflict detected. Retrying attempt 4...
+
+{ insertId: "68b56b520009098a833c7e79" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:45:54.685391185Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 4..." timestamp: "2025-09-01T09:45:54.592266Z" } 2025-09-01 02:45:54.586 Concurrency conflict detected. Retrying attempt 4... 2025-09-01 02:45:54.529 Concurrency conflict detected. Retrying attempt 4... 2025-09-01 02:45:54.215 Concurrency conflict detected. Retrying attempt 3... 2025-09-01 02:45:54.200 Concurrency conflict detected. Retrying attempt 3...
+
+{ insertId: "68b56b5200030da19dbc1fdd" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:45:54.349451551Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 3..." timestamp: "2025-09-01T09:45:54.200097Z" } 2025-09-01 02:45:54.198 Concurrency conflict detected. Retrying attempt 3...
+
+{ insertId: "68b56b52000307a8fb7c90fd" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:45:54.349451551Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 3..." timestamp: "2025-09-01T09:45:54.198568Z" } 2025-09-01 02:45:54.197 Concurrency conflict detected. Retrying attempt 3...
+
+{ insertId: "68b56b52000303cde9afe1f2" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:45:54.349451551Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 3..." timestamp: "2025-09-01T09:45:54.197581Z" } 2025-09-01 02:45:54.148 Concurrency conflict detected. Retrying attempt 3...
+
+{ insertId: "68b56b520002459110a6c136" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:45:54.349451551Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 3..." timestamp: "2025-09-01T09:45:54.148881Z" } 2025-09-01 02:45:53.915 Concurrency conflict detected. Retrying attempt 2...
+
+{ insertId: "68b56b51000df9b6b536eee3" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:45:54.013741438Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 2..." timestamp: "2025-09-01T09:45:53.915894Z" } 2025-09-01 02:45:53.906 Concurrency conflict detected. Retrying attempt 2...
+
+{ insertId: "68b56b51000dd5f3ecae86ee" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:45:54.013741438Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 2..." timestamp: "2025-09-01T09:45:53.906739Z" } 2025-09-01 02:45:53.896 Concurrency conflict detected. Retrying attempt 2...
+
+{ insertId: "68b56b51000dac043329035b" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:45:54.013741438Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 2..." timestamp: "2025-09-01T09:45:53.896004Z" } 2025-09-01 02:45:53.883 Concurrency conflict detected. Retrying attempt 2...
+
+{ insertId: "68b56b51000d7c84822c1fef" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:45:54.013741438Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 2..." timestamp: "2025-09-01T09:45:53.883844Z" } 2025-09-01 02:45:53.867 Concurrency conflict detected. Retrying attempt 2...
+
+{ insertId: "68b56b51000d3c1cdf1db181" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:45:54.013741438Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 2..." timestamp: "2025-09-01T09:45:53.867356Z" } 2025-09-01 02:45:53.714 Concurrency conflict detected. Retrying attempt 1...
+
+{ insertId: "68b56b51000ae7abbf6afcc4" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:45:54.013741438Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 1..." timestamp: "2025-09-01T09:45:53.714667Z" } 2025-09-01 02:45:53.703 Concurrency conflict detected. Retrying attempt 1...
+
+{ insertId: "68b56b51000abb0daf4650cc" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:45:54.013741438Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 1..." timestamp: "2025-09-01T09:45:53.703245Z" } 2025-09-01 02:45:53.702 Concurrency conflict detected. Retrying attempt 1...
+
+{ insertId: "68b56b51000ab90569d3cab7" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:45:54.013741438Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 1..." timestamp: "2025-09-01T09:45:53.702725Z" } 2025-09-01 02:45:53.681 Concurrency conflict detected. Retrying attempt 1...
+
+{ insertId: "68b56b51000a669dfed9e871" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:45:54.013741438Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 1..." timestamp: "2025-09-01T09:45:53.681629Z" } 2025-09-01 02:45:53.678 Concurrency conflict detected. Retrying attempt 1...
+
+{ insertId: "68b56b51000a58925fa5a53c" labels: {1} logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr" receiveTimestamp: "2025-09-01T09:45:53.682393554Z" resource: {2} textPayload: "Concurrency conflict detected. Retrying attempt 1..." timestamp: "2025-09-01T09:45:53.678034Z" } 2025-09-01 02:45:53.249
+
+POST
+
+500
+
+172 B
+
+2.369 s
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html) https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+{ httpRequest: {10} insertId: "68b56b5300097c184a5b49a2" labels: {3} logName: "projects/thebestever/logs/run.googleapis.com%2Frequests" receiveTimestamp: "2025-09-01T09:45:55.670184225Z" resource: {2} severity: "ERROR" spanId: "06c1fda260923edf" timestamp: "2025-09-01T09:45:53.249729Z" trace: "projects/thebestever/traces/860673815a4acc1751ac9d558ffe55d9" } 2025-09-01 02:45:53.233
+
+POST
+
+500
+
+172 B
+
+2.36 s
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html) https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs 2025-09-01 02:45:53.232
+
+POST
+
+500
+
+172 B
+
+2.394 s
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html) https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs 2025-09-01 02:45:53.228
+
+POST
+
+200
+
+130 B
+
+424 ms
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html) https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs 2025-09-01 02:45:53.226
+
+POST
+
+500
+
+172 B
+
+2.264 s
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html) https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+{ httpRequest: {10} insertId: "68b56b530007c01947e18c9a" labels: {3} logName: "projects/thebestever/logs/run.googleapis.com%2Frequests" receiveTimestamp: "2025-09-01T09:45:55.670184225Z" resource: {2} severity: "ERROR" spanId: "d57f9daacef1dec1" timestamp: "2025-09-01T09:45:53.226Z" trace: "projects/thebestever/traces/34b2d652670b0391f7e296f01d845837" } 2025-09-01 02:45:53.217
+
+POST
+
+500
+
+172 B
+
+2.341 s
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html) https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+{ httpRequest: {10} insertId: "68b56b530008c767716fbaf1" labels: {3} logName: "projects/thebestever/logs/run.googleapis.com%2Frequests" receiveTimestamp: "2025-09-01T09:45:55.670184225Z" resource: {2} severity: "ERROR" spanId: "c191345e19443a55" timestamp: "2025-09-01T09:45:53.217939Z" trace: "projects/thebestever/traces/63fcc54cec8f97796a2c5a717e984dae" traceSampled: true }
+
+
+
+Included in
+
+
+
+
+#########################################################      logger cross checker ##############################################################  
+
+
+
+351 results
+
+
+
+SeverityTimeSummary
+
+
+
+Showing logs for last 5 minutes from 9/1/25, 2:42 AM to 9/1/25, 2:47 AM.
+
+2025-09-01 02:46:30.996
+
+POST
+
+200
+
+130 B
+
+211 ms
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)
+
+https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+{
+
+httpRequest: {10}
+
+insertId: "68b56b77000334113e8d07d7"
+
+labels: {3}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Frequests"
+
+receiveTimestamp: "2025-09-01T09:46:31.222504296Z"
+
+resource: {2}
+
+severity: "INFO"
+
+spanId: "b992cdb72bb4de07"
+
+timestamp: "2025-09-01T09:46:30.996110Z"
+
+trace: "projects/thebestever/traces/8631c85b37f079a7a94dbf55a62af10d"
+
+}
+
+2025-09-01 02:46:24.966
+
+POST
+
+200
+
+130 B
+
+244 ms
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)
+
+https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+{
+
+httpRequest: {10}
+
+insertId: "68b56b71000365191f34174f"
+
+labels: {3}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Frequests"
+
+receiveTimestamp: "2025-09-01T09:46:25.224103432Z"
+
+resource: {2}
+
+severity: "INFO"
+
+spanId: "32f1f9bdf34d3543"
+
+timestamp: "2025-09-01T09:46:24.966694Z"
+
+trace: "projects/thebestever/traces/8f301b49738a739ff7a864c437dbd77c"
+
+traceSampled: true
+
+}
+
+2025-09-01 02:46:12.422
+
+Max retries exceeded for updating master log. Log entry dropped.
+
+2025-09-01 02:46:12.368
+
+Max retries exceeded for updating master log. Log entry dropped.
+
+2025-09-01 02:46:11.922
+
+Concurrency conflict detected. Retrying attempt 5...
+
+{
+
+insertId: "68b56b63000e11939685f70c"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:46:12.005917196Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 5..."
+
+timestamp: "2025-09-01T09:46:11.922003Z"
+
+}
+
+2025-09-01 02:46:11.867
+
+Concurrency conflict detected. Retrying attempt 5...
+
+2025-09-01 02:46:11.405
+
+Concurrency conflict detected. Retrying attempt 4...
+
+2025-09-01 02:46:11.369
+
+Concurrency conflict detected. Retrying attempt 4...
+
+{
+
+insertId: "68b56b630005a3a66dd08a3e"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:46:11.673842228Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 4..."
+
+timestamp: "2025-09-01T09:46:11.369574Z"
+
+}
+
+2025-09-01 02:46:10.984
+
+Concurrency conflict detected. Retrying attempt 3...
+
+2025-09-01 02:46:10.971
+
+Concurrency conflict detected. Retrying attempt 3...
+
+{
+
+insertId: "68b56b62000ed27473bc89a5"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:46:11.008348113Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 3..."
+
+timestamp: "2025-09-01T09:46:10.971380Z"
+
+}
+
+2025-09-01 02:46:10.685
+
+Concurrency conflict detected. Retrying attempt 2...
+
+2025-09-01 02:46:10.658
+
+Concurrency conflict detected. Retrying attempt 2...
+
+2025-09-01 02:46:10.478
+
+Concurrency conflict detected. Retrying attempt 1...
+
+{
+
+insertId: "68b56b6200074c3dc7744b08"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:46:10.675309003Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 1..."
+
+timestamp: "2025-09-01T09:46:10.478269Z"
+
+}
+
+2025-09-01 02:46:10.467
+
+Concurrency conflict detected. Retrying attempt 1...
+
+2025-09-01 02:46:10.301
+
+POST
+
+500
+
+172 B
+
+2.065 s
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)
+
+https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+
+
+{
+
+httpRequest: {10}
+
+insertId: "68b56b640005a17b916b9cdb"
+
+labels: {3}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Frequests"
+
+receiveTimestamp: "2025-09-01T09:46:12.664441122Z"
+
+resource: {2}
+
+severity: "ERROR"
+
+spanId: "242ab3d05318d744"
+
+timestamp: "2025-09-01T09:46:10.301047Z"
+
+trace: "projects/thebestever/traces/10b78c64d7fb41e76174f9eb939b8af8"
+
+}
+
+2025-09-01 02:46:10.299
+
+POST
+
+500
+
+172 B
+
+2.121 s
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)
+
+https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+
+
+{
+
+httpRequest: {10}
+
+insertId: "68b56b640006750a094f21dd"
+
+labels: {3}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Frequests"
+
+receiveTimestamp: "2025-09-01T09:46:12.664441122Z"
+
+resource: {2}
+
+severity: "ERROR"
+
+spanId: "0e75b1a29ea58814"
+
+timestamp: "2025-09-01T09:46:10.299611Z"
+
+trace: "projects/thebestever/traces/f94b3bdf0378234f85783d3a859d0398"
+
+}
+
+2025-09-01 02:46:10.257
+
+POST
+
+200
+
+130 B
+
+191 ms
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)
+
+https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+{
+
+httpRequest: {10}
+
+insertId: "68b56b620006e7c420c305b0"
+
+labels: {3}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Frequests"
+
+receiveTimestamp: "2025-09-01T09:46:10.665024507Z"
+
+resource: {2}
+
+severity: "INFO"
+
+spanId: "5b30574b0ae67ddb"
+
+timestamp: "2025-09-01T09:46:10.257869Z"
+
+trace: "projects/thebestever/traces/4951fe3d7ad657c036394af3bd605d91"
+
+}
+
+2025-09-01 02:46:09.140
+
+POST
+
+200
+
+130 B
+
+209 ms
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)
+
+https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+2025-09-01 02:46:08.138
+
+POST
+
+200
+
+130 B
+
+243 ms
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)
+
+https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+{
+
+httpRequest: {10}
+
+insertId: "68b56b600005f4108a10b8a4"
+
+labels: {3}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Frequests"
+
+receiveTimestamp: "2025-09-01T09:46:08.666827922Z"
+
+resource: {2}
+
+severity: "INFO"
+
+spanId: "bf6a9235933186e8"
+
+timestamp: "2025-09-01T09:46:08.138034Z"
+
+trace: "projects/thebestever/traces/81c2b8a5b9745c073152ccfcec525849"
+
+traceSampled: true
+
+}
+
+2025-09-01 02:45:55.628
+
+Max retries exceeded for updating master log. Log entry dropped.
+
+2025-09-01 02:45:55.620
+
+Max retries exceeded for updating master log. Log entry dropped.
+
+2025-09-01 02:45:55.595
+
+Max retries exceeded for updating master log. Log entry dropped.
+
+2025-09-01 02:45:55.574
+
+Max retries exceeded for updating master log. Log entry dropped.
+
+2025-09-01 02:45:55.506
+
+Max retries exceeded for updating master log. Log entry dropped.
+
+2025-09-01 02:45:55.128
+
+Concurrency conflict detected. Retrying attempt 5...
+
+2025-09-01 02:45:55.120
+
+Concurrency conflict detected. Retrying attempt 5...
+
+2025-09-01 02:45:55.095
+
+Concurrency conflict detected. Retrying attempt 5...
+
+2025-09-01 02:45:55.074
+
+Concurrency conflict detected. Retrying attempt 5...
+
+{
+
+insertId: "68b56b53000121f1379ff67f"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:45:55.347818155Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 5..."
+
+timestamp: "2025-09-01T09:45:55.074225Z"
+
+}
+
+2025-09-01 02:45:55.006
+
+Concurrency conflict detected. Retrying attempt 5...
+
+2025-09-01 02:45:54.628
+
+Concurrency conflict detected. Retrying attempt 4...
+
+2025-09-01 02:45:54.626
+
+Concurrency conflict detected. Retrying attempt 4...
+
+2025-09-01 02:45:54.592
+
+Concurrency conflict detected. Retrying attempt 4...
+
+{
+
+insertId: "68b56b520009098a833c7e79"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:45:54.685391185Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 4..."
+
+timestamp: "2025-09-01T09:45:54.592266Z"
+
+}
+
+2025-09-01 02:45:54.586
+
+Concurrency conflict detected. Retrying attempt 4...
+
+2025-09-01 02:45:54.529
+
+Concurrency conflict detected. Retrying attempt 4...
+
+2025-09-01 02:45:54.215
+
+Concurrency conflict detected. Retrying attempt 3...
+
+2025-09-01 02:45:54.200
+
+Concurrency conflict detected. Retrying attempt 3...
+
+{
+
+insertId: "68b56b5200030da19dbc1fdd"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:45:54.349451551Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 3..."
+
+timestamp: "2025-09-01T09:45:54.200097Z"
+
+}
+
+2025-09-01 02:45:54.198
+
+Concurrency conflict detected. Retrying attempt 3...
+
+{
+
+insertId: "68b56b52000307a8fb7c90fd"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:45:54.349451551Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 3..."
+
+timestamp: "2025-09-01T09:45:54.198568Z"
+
+}
+
+2025-09-01 02:45:54.197
+
+Concurrency conflict detected. Retrying attempt 3...
+
+{
+
+insertId: "68b56b52000303cde9afe1f2"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:45:54.349451551Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 3..."
+
+timestamp: "2025-09-01T09:45:54.197581Z"
+
+}
+
+2025-09-01 02:45:54.148
+
+Concurrency conflict detected. Retrying attempt 3...
+
+{
+
+insertId: "68b56b520002459110a6c136"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:45:54.349451551Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 3..."
+
+timestamp: "2025-09-01T09:45:54.148881Z"
+
+}
+
+2025-09-01 02:45:53.915
+
+Concurrency conflict detected. Retrying attempt 2...
+
+{
+
+insertId: "68b56b51000df9b6b536eee3"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:45:54.013741438Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 2..."
+
+timestamp: "2025-09-01T09:45:53.915894Z"
+
+}
+
+2025-09-01 02:45:53.906
+
+Concurrency conflict detected. Retrying attempt 2...
+
+{
+
+insertId: "68b56b51000dd5f3ecae86ee"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:45:54.013741438Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 2..."
+
+timestamp: "2025-09-01T09:45:53.906739Z"
+
+}
+
+2025-09-01 02:45:53.896
+
+Concurrency conflict detected. Retrying attempt 2...
+
+{
+
+insertId: "68b56b51000dac043329035b"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:45:54.013741438Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 2..."
+
+timestamp: "2025-09-01T09:45:53.896004Z"
+
+}
+
+2025-09-01 02:45:53.883
+
+Concurrency conflict detected. Retrying attempt 2...
+
+{
+
+insertId: "68b56b51000d7c84822c1fef"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:45:54.013741438Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 2..."
+
+timestamp: "2025-09-01T09:45:53.883844Z"
+
+}
+
+2025-09-01 02:45:53.867
+
+Concurrency conflict detected. Retrying attempt 2...
+
+{
+
+insertId: "68b56b51000d3c1cdf1db181"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:45:54.013741438Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 2..."
+
+timestamp: "2025-09-01T09:45:53.867356Z"
+
+}
+
+2025-09-01 02:45:53.714
+
+Concurrency conflict detected. Retrying attempt 1...
+
+{
+
+insertId: "68b56b51000ae7abbf6afcc4"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:45:54.013741438Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 1..."
+
+timestamp: "2025-09-01T09:45:53.714667Z"
+
+}
+
+2025-09-01 02:45:53.703
+
+Concurrency conflict detected. Retrying attempt 1...
+
+{
+
+insertId: "68b56b51000abb0daf4650cc"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:45:54.013741438Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 1..."
+
+timestamp: "2025-09-01T09:45:53.703245Z"
+
+}
+
+2025-09-01 02:45:53.702
+
+Concurrency conflict detected. Retrying attempt 1...
+
+{
+
+insertId: "68b56b51000ab90569d3cab7"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:45:54.013741438Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 1..."
+
+timestamp: "2025-09-01T09:45:53.702725Z"
+
+}
+
+2025-09-01 02:45:53.681
+
+Concurrency conflict detected. Retrying attempt 1...
+
+{
+
+insertId: "68b56b51000a669dfed9e871"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:45:54.013741438Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 1..."
+
+timestamp: "2025-09-01T09:45:53.681629Z"
+
+}
+
+2025-09-01 02:45:53.678
+
+Concurrency conflict detected. Retrying attempt 1...
+
+{
+
+insertId: "68b56b51000a58925fa5a53c"
+
+labels: {1}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Fstderr"
+
+receiveTimestamp: "2025-09-01T09:45:53.682393554Z"
+
+resource: {2}
+
+textPayload: "Concurrency conflict detected. Retrying attempt 1..."
+
+timestamp: "2025-09-01T09:45:53.678034Z"
+
+}
+
+2025-09-01 02:45:53.249
+
+POST
+
+500
+
+172 B
+
+2.369 s
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)
+
+https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+
+
+{
+
+httpRequest: {10}
+
+insertId: "68b56b5300097c184a5b49a2"
+
+labels: {3}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Frequests"
+
+receiveTimestamp: "2025-09-01T09:45:55.670184225Z"
+
+resource: {2}
+
+severity: "ERROR"
+
+spanId: "06c1fda260923edf"
+
+timestamp: "2025-09-01T09:45:53.249729Z"
+
+trace: "projects/thebestever/traces/860673815a4acc1751ac9d558ffe55d9"
+
+}
+
+2025-09-01 02:45:53.233
+
+POST
+
+500
+
+172 B
+
+2.36 s
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)
+
+https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+2025-09-01 02:45:53.232
+
+POST
+
+500
+
+172 B
+
+2.394 s
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)
+
+https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+2025-09-01 02:45:53.228
+
+POST
+
+200
+
+130 B
+
+424 ms
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)
+
+https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+2025-09-01 02:45:53.226
+
+POST
+
+500
+
+172 B
+
+2.264 s
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)
+
+https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+
+
+{
+
+httpRequest: {10}
+
+insertId: "68b56b530007c01947e18c9a"
+
+labels: {3}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Frequests"
+
+receiveTimestamp: "2025-09-01T09:45:55.670184225Z"
+
+resource: {2}
+
+severity: "ERROR"
+
+spanId: "d57f9daacef1dec1"
+
+timestamp: "2025-09-01T09:45:53.226Z"
+
+trace: "projects/thebestever/traces/34b2d652670b0391f7e296f01d845837"
+
+}
+
+2025-09-01 02:45:53.217
+
+POST
+
+500
+
+172 B
+
+2.341 s
+
+APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)
+
+https://gitlogger-consolidation-service-y754exwbtq-uc.a.run.app/?__GCP_CloudEventsMode=CUSTOM_PUBSUB_projects%2Fthebestever%2Ftopics%2Freal-time-logs
+
+
+
+{
+
+httpRequest: {10}
+
+insertId: "68b56b530008c767716fbaf1"
+
+labels: {3}
+
+logName: "projects/thebestever/logs/run.googleapis.com%2Frequests"
+
+receiveTimestamp: "2025-09-01T09:45:55.670184225Z"
+
+resource: {2}
+
+severity: "ERROR"
+
+spanId: "c191345e19443a55"
+
+timestamp: "2025-09-01T09:45:53.217939Z"
+
+trace: "projects/thebestever/traces/63fcc54cec8f97796a2c5a717e984dae"
+
+traceSampled: true
+
+}-----------
+
+
+
+Also was there accuracy between the logs explore these are a different project these are the ones I use to feed errors into log system so I was wondering if these accurate as a log
+
+
+
+### here is the consolidated logger
+
+
+
+
+
+
+
+
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T06:00:13.95803603Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "gitlogger-consolidation-service",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "gitlogger-consolidation-service-00020-9wv",
+
+        "service_name": "gitlogger-consolidation-service"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "textPayload": "  \"error\": {",
+
+    "timestamp": "2025-09-01T06:00:13.790947Z"
+
+  },
+
+  {
+
+    "insertId": "68b5366d000c11cec753167c",
+
+    "labels": {
+
+      "instanceId": "0069c7a98856a066d1b241c4a0142975076e41e1e4e4336b8a6ddb479ad01b86af2c00d90a1b64c35c05d588e935be6d4fd16ed54e279d7df8105a13fc854ab9c4e2b47b139e86291a9ba009cfa3d7"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T06:00:13.95803603Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "gitlogger-consolidation-service",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "gitlogger-consolidation-service-00020-9wv",
+
+        "service_name": "gitlogger-consolidation-service"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "textPayload": "      }",
+
+    "timestamp": "2025-09-01T06:00:13.79099Z"
+
+  },
+
+  {
+
+    "insertId": "68b53678000d6056dc69f225",
+
+    "labels": {
+
+      "instanceId": "0069c7a9886a900a69c93a88cec8a7f3df163fe1d7ec0f78c23b53cbdd9487b7aa9d9007d98a34a864326698e2f07fe847e5e88d3a416ca573fd76fc320bcc9126e3d0c5b0569ea72da01642c856"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T06:00:24.975259548Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "gitlogger-consolidation-service",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "gitlogger-consolidation-service-00020-9wv",
+
+        "service_name": "gitlogger-consolidation-service"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "textPayload": "  }",
+
+    "timestamp": "2025-09-01T06:00:24.87663Z"
+
+  },
+
+  {
+
+    "insertId": "68b53671000b8d220cec7b2a",
+
+    "labels": {
+
+      "instanceId": "0069c7a98856a066d1b241c4a0142975076e41e1e4e4336b8a6ddb479ad01b86af2c00d90a1b64c35c05d588e935be6d4fd16ed54e279d7df8105a13fc854ab9c4e2b47b139e86291a9ba009cfa3d7"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T06:00:18.090563723Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "gitlogger-consolidation-service",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "gitlogger-consolidation-service-00020-9wv",
+
+        "service_name": "gitlogger-consolidation-service"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "textPayload": "        \"reason\": \"conditionNotMet\",",
+
+    "timestamp": "2025-09-01T06:00:17.757026Z"
+
+  },
+
+  {
+
+    "insertId": "68b5366e000089d5c7f174d1",
+
+    "labels": {
+
+      "instanceId": "0069c7a98856a066d1b241c4a0142975076e41e1e4e4336b8a6ddb479ad01b86af2c00d90a1b64c35c05d588e935be6d4fd16ed54e279d7df8105a13fc854ab9c4e2b47b139e86291a9ba009cfa3d7"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T06:00:14.29336973Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "gitlogger-consolidation-service",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "gitlogger-consolidation-service-00020-9wv",
+
+        "service_name": "gitlogger-consolidation-service"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "textPayload": "        \"reason\": \"conditionNotMet\",",
+
+    "timestamp": "2025-09-01T06:00:14.035285Z"
+
+  },
+
+  {
+
+    "insertId": "68b5366d000c11d9b66de007",
+
+    "labels": {
+
+      "instanceId": "0069c7a98856a066d1b241c4a0142975076e41e1e4e4336b8a6ddb479ad01b86af2c00d90a1b64c35c05d588e935be6d4fd16ed54e279d7df8105a13fc854ab9c4e2b47b139e86291a9ba009cfa3d7"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T06:00:13.95803603Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "gitlogger-consolidation-service",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "gitlogger-consolidation-service-00020-9wv",
+
+        "service_name": "gitlogger-consolidation-service"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "textPayload": "}",
+
+    "timestamp": "2025-09-01T06:00:13.791001Z"
+
+  },
+
+  {
+
+    "insertId": "68b53671000b8d2950d69e88",
+
+    "labels": {
+
+      "instanceId": "0069c7a98856a066d1b241c4a0142975076e41e1e4e4336b8a6ddb479ad01b86af2c00d90a1b64c35c05d588e935be6d4fd16ed54e279d7df8105a13fc854ab9c4e2b47b139e86291a9ba009cfa3d7"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T06:00:18.090563723Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "gitlogger-consolidation-service",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "gitlogger-consolidation-service-00020-9wv",
+
+        "service_name": "gitlogger-consolidation-service"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "textPayload": "        \"location\": \"If-Match\"",
+
+    "timestamp": "2025-09-01T06:00:17.757033Z"
+
+  },
+
+  {
+
+    "insertId": "68b5367400083db78bf676fe",
+
+    "labels": {
+
+      "instanceId": "0069c7a9886a900a69c93a88cec8a7f3df163fe1d7ec0f78c23b53cbdd9487b7aa9d9007d98a34a864326698e2f07fe847e5e88d3a416ca573fd76fc320bcc9126e3d0c5b0569ea72da01642c856"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T06:00:20.643998966Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "gitlogger-consolidation-service",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "gitlogger-consolidation-service-00020-9wv",
+
+        "service_name": "gitlogger-consolidation-service"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "textPayload": "}",
+
+    "timestamp": "2025-09-01T06:00:20.540087Z"
+
+  },
+
+  {
+
+    "insertId": "68b53678000dab7de1cf2e8b",
+
+    "labels": {
+
+      "instanceId": "0069c7a9886a900a69c93a88cec8a7f3df163fe1d7ec0f78c23b53cbdd9487b7aa9d9007d98a34a864326698e2f07fe847e5e88d3a416ca573fd76fc320bcc9126e3d0c5b0569ea72da01642c856"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T06:00:24.975259548Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "gitlogger-consolidation-service",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "gitlogger-consolidation-service-00020-9wv",
+
+        "service_name": "gitlogger-consolidation-service"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "textPayload": "      {",
+
+    "timestamp": "2025-09-01T06:00:24.895869Z"
+
+  },
+
+  {
+
+    "insertId": "68b5366e0000e494e0f543d0",
+
+    "labels": {
+
+      "instanceId": "0069c7a98856a066d1b241c4a0142975076e41e1e4e4336b8a6ddb479ad01b86af2c00d90a1b64c35c05d588e935be6d4fd16ed54e279d7df8105a13fc854ab9c4e2b47b139e86291a9ba009cfa3d7"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T06:00:14.29336973Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "gitlogger-consolidation-service",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "gitlogger-consolidation-service-00020-9wv",
+
+        "service_name": "gitlogger-consolidation-service"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "textPayload": "        \"message\": \"At least one of the pre-conditions you specified did not hold.\",",
+
+    "timestamp": "2025-09-01T06:00:14.058516Z"
+
+  },
+
+  {
+
+    "insertId": "68b53671000b8d26f1cbd77c",
+
+    "labels": {
+
+      "instanceId": "0069c7a98856a066d1b241c4a0142975076e41e1e4e4336b8a6ddb479ad01b86af2c00d90a1b64c35c05d588e935be6d4fd16ed54e279d7df8105a13fc854ab9c4e2b47b139e86291a9ba009cfa3d7"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T06:00:18.090563723Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "gitlogger-consolidation-service",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "gitlogger-consolidation-service-00020-9wv",
+
+        "service_name": "gitlogger-consolidation-service"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "textPayload": "        \"locationType\": \"header\",",
+
+    "timestamp": "2025-09-01T06:00:17.75703Z"
+
+  },
+
+  {
+
+    "insertId": "68b5366d000c11b457d2bd0f",
+
+    "labels": {
+
+      "instanceId": "0069c7a98856a066d1b241c4a0142975076e41e1e4e4336b8a6ddb479ad01b86af2c00d90a1b64c35c05d588e935be6d4fd16ed54e279d7df8105a13fc854ab9c4e2b47b139e86291a9ba009cfa3d7"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T06:00:13.95803603Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "gitlogger-consolidation-service",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "gitlogger-consolidation-service-00020-9wv",
+
+        "service_name": "gitlogger-consolidation-service"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "textPayload": "      {",
+
+    "timestamp": "2025-09-01T06:00:13.790964Z"
+
+  },
+
+  {
+
+    "insertId": "68b5366d000c0349a24e3fba",
+
+    "labels": {
+
+      "instanceId": "0069c7a98856a066d1b241c4a0142975076e41e1e4e4336b8a6ddb479ad01b86af2c00d90a1b64c35c05d588e935be6d4fd16ed54e279d7df8105a13fc854ab9c4e2b47b139e86291a9ba009cfa3d7"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T06:00:13.95803603Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "gitlogger-consolidation-service",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "gitlogger-consolidation-service-00020-9wv",
+
+        "service_name": "gitlogger-consolidation-service"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "textPayload": "    \"code\": 412,",
+
+    "timestamp": "2025-09-01T06:00:13.787273Z"
+
+  },
+
+  {
+
+    "insertId": "68b5366d000c03502a399319",
+
+    "labels": {
+
+      "instanceId": "0069c7a98856a066d1b241c4a0142975076e41e1e4e4336b8a6ddb479ad01b86af2c00d90a1b64c35c05d588e935be6d4fd16ed54e279d7df8105a13fc854ab9c4e2b47b139e86291a9ba009cfa3d7"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T06:00:13.95803603Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "gitlogger-consolidation-service",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "gitlogger-consolidation-service-00020-9wv",
+
+        "service_name": "gitlogger-consolidation-service"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "textPayload": "    \"errors\": [",
+
+    "timestamp": "2025-09-01T06:00:13.78728Z"
+
+  },
+
+  {
+
+    "insertId": "68b5569d0009b07ec2251b9f",
+
+    "labels": {
+
+      "instanceId": "0069c7a988583700cd7d2a552b5fa3cd7358b963ed7bc08d2e40ba62955b954c25b1bc481f53d5365b837bd49339a037f5974697c2fc89ecf0e594c0ef7c44d8e9e9bd5d3b58c638d4924cf8be8999"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T08:17:33.79864591Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/app/main.py\", line 684, in _handle_processing_with_lease_lock\n    blob.reload()\n  File \"/opt/venv/lib/python3.12/site-packages/google/cloud/storage/_helpers.py\", line 303, in reload\n    api_response = client._get_resource(",
+
+    "timestamp": "2025-09-01T08:17:33.635006Z"
+
+  },
+
+  {
+
+    "insertId": "68b5569d0009b0d7495e17fc",
+
+    "labels": {
+
+      "instanceId": "0069c7a988583700cd7d2a552b5fa3cd7358b963ed7bc08d2e40ba62955b954c25b1bc481f53d5365b837bd49339a037f5974697c2fc89ecf0e594c0ef7c44d8e9e9bd5d3b58c638d4924cf8be8999"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T08:17:33.79864591Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/opt/venv/lib/python3.12/site-packages/google/cloud/storage/blob.py\", line 2700, in _prep_and_do_upload\n    created_json = self._do_upload(",
+
+    "timestamp": "2025-09-01T08:17:33.635095Z"
+
+  },
+
+  {
+
+    "insertId": "68b5569d0009b14eb45cbe62",
+
+    "labels": {
+
+      "instanceId": "0069c7a988583700cd7d2a552b5fa3cd7358b963ed7bc08d2e40ba62955b954c25b1bc481f53d5365b837bd49339a037f5974697c2fc89ecf0e594c0ef7c44d8e9e9bd5d3b58c638d4924cf8be8999"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T08:17:33.79864591Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/app/main.py\", line 701, in _handle_processing_with_lease_lock\n    blob.upload_from_string(new_lease_time, if_generation_match=0)\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 81, in inner\n    return func(*args, **kwds)",
+
+    "timestamp": "2025-09-01T08:17:33.635214Z"
+
+  },
+
+  {
+
+    "insertId": "68b5569d00092cc807f43e62",
+
+    "labels": {
+
+      "instanceId": "0069c7a988583700cd7d2a552b5fa3cd7358b963ed7bc08d2e40ba62955b954c25b1bc481f53d5365b837bd49339a037f5974697c2fc89ecf0e594c0ef7c44d8e9e9bd5d3b58c638d4924cf8be8999"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T08:17:33.79864591Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/app/main.py\", line 701, in _handle_processing_with_lease_lock\n    blob.upload_from_string(new_lease_time, if_generation_match=0)\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 81, in inner\n    return func(*args, **kwds)",
+
+    "timestamp": "2025-09-01T08:17:33.601288Z"
+
+  },
+
+  {
+
+    "insertId": "68b5569d00092c70debe40f4",
+
+    "labels": {
+
+      "instanceId": "0069c7a988583700cd7d2a552b5fa3cd7358b963ed7bc08d2e40ba62955b954c25b1bc481f53d5365b837bd49339a037f5974697c2fc89ecf0e594c0ef7c44d8e9e9bd5d3b58c638d4924cf8be8999"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T08:17:33.79864591Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/opt/venv/lib/python3.12/site-packages/google/cloud/storage/blob.py\", line 2700, in _prep_and_do_upload\n    created_json = self._do_upload(",
+
+    "timestamp": "2025-09-01T08:17:33.6012Z"
+
+  },
+
+  {
+
+    "insertId": "68b5569d00092c16e97a6127",
+
+    "labels": {
+
+      "instanceId": "0069c7a988583700cd7d2a552b5fa3cd7358b963ed7bc08d2e40ba62955b954c25b1bc481f53d5365b837bd49339a037f5974697c2fc89ecf0e594c0ef7c44d8e9e9bd5d3b58c638d4924cf8be8999"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T08:17:33.79864591Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/app/main.py\", line 684, in _handle_processing_with_lease_lock\n    blob.reload()\n  File \"/opt/venv/lib/python3.12/site-packages/google/cloud/storage/_helpers.py\", line 303, in reload\n    api_response = client._get_resource(",
+
+    "timestamp": "2025-09-01T08:17:33.60111Z"
+
+  },
+
+  {
+
+    "insertId": "68b561140003d342d67d945d",
+
+    "labels": {
+
+      "instanceId": "0069c7a9883d8467a4e926bab36bf041bdc3be3bc09650d2d7dbbef117b94c473261cf88813be90d3b5f3aed154e509d6db7fb53c6b7f4be7b37d394729d3dd37019a8e261886e84d0fed2f0689d84"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T09:02:12.520593397Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/app/main.py\", line 684, in _handle_processing_with_lease_lock\n    blob.reload()\n  File \"/opt/venv/lib/python3.12/site-packages/google/cloud/storage/_helpers.py\", line 303, in reload\n    api_response = client._get_resource(",
+
+    "timestamp": "2025-09-01T09:02:12.25069Z"
+
+  },
+
+  {
+
+    "insertId": "68b561140003dfc14703ad78",
+
+    "labels": {
+
+      "instanceId": "0069c7a9883d8467a4e926bab36bf041bdc3be3bc09650d2d7dbbef117b94c473261cf88813be90d3b5f3aed154e509d6db7fb53c6b7f4be7b37d394729d3dd37019a8e261886e84d0fed2f0689d84"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T09:02:12.520593397Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/app/main.py\", line 684, in _handle_processing_with_lease_lock\n    blob.reload()\n  File \"/opt/venv/lib/python3.12/site-packages/google/cloud/storage/_helpers.py\", line 303, in reload\n    api_response = client._get_resource(",
+
+    "timestamp": "2025-09-01T09:02:12.253889Z"
+
+  },
+
+  {
+
+    "insertId": "68b561140003d3b8e60f46e7",
+
+    "labels": {
+
+      "instanceId": "0069c7a9883d8467a4e926bab36bf041bdc3be3bc09650d2d7dbbef117b94c473261cf88813be90d3b5f3aed154e509d6db7fb53c6b7f4be7b37d394729d3dd37019a8e261886e84d0fed2f0689d84"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T09:02:12.520593397Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/app/main.py\", line 701, in _handle_processing_with_lease_lock\n    blob.upload_from_string(new_lease_time, if_generation_match=0)\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 81, in inner\n    return func(*args, **kwds)",
+
+    "timestamp": "2025-09-01T09:02:12.250808Z"
+
+  },
+
+  {
+
+    "insertId": "68b561140003dfff3b76ab06",
+
+    "labels": {
+
+      "instanceId": "0069c7a9883d8467a4e926bab36bf041bdc3be3bc09650d2d7dbbef117b94c473261cf88813be90d3b5f3aed154e509d6db7fb53c6b7f4be7b37d394729d3dd37019a8e261886e84d0fed2f0689d84"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T09:02:12.520593397Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/opt/venv/lib/python3.12/site-packages/google/cloud/storage/blob.py\", line 2700, in _prep_and_do_upload\n    created_json = self._do_upload(",
+
+    "timestamp": "2025-09-01T09:02:12.253951Z"
+
+  },
+
+  {
+
+    "insertId": "68b561140003e046e7f6d112",
+
+    "labels": {
+
+      "instanceId": "0069c7a9883d8467a4e926bab36bf041bdc3be3bc09650d2d7dbbef117b94c473261cf88813be90d3b5f3aed154e509d6db7fb53c6b7f4be7b37d394729d3dd37019a8e261886e84d0fed2f0689d84"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T09:02:12.520593397Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/app/main.py\", line 701, in _handle_processing_with_lease_lock\n    blob.upload_from_string(new_lease_time, if_generation_match=0)\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 81, in inner\n    return func(*args, **kwds)",
+
+    "timestamp": "2025-09-01T09:02:12.254022Z"
+
+  },
+
+  {
+
+    "insertId": "68b561140003d380a58ed3ac",
+
+    "labels": {
+
+      "instanceId": "0069c7a9883d8467a4e926bab36bf041bdc3be3bc09650d2d7dbbef117b94c473261cf88813be90d3b5f3aed154e509d6db7fb53c6b7f4be7b37d394729d3dd37019a8e261886e84d0fed2f0689d84"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T09:02:12.520593397Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/opt/venv/lib/python3.12/site-packages/google/cloud/storage/blob.py\", line 2700, in _prep_and_do_upload\n    created_json = self._do_upload(",
+
+    "timestamp": "2025-09-01T09:02:12.250752Z"
+
+  },
+
+  {
+
+    "insertId": "68b56b4f0006ef8b42eb5add",
+
+    "labels": {
+
+      "instanceId": "0069c7a9885a4766d3af331cbf75dc840a314e649b16ee9bcaaae2f72dff30525736eb7838bc5a8c8ea80be55aa07e58c3e4c5aea44a5b865d8ff956b083f894f6096f7f809dfe76397595bb54ebc9"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T09:45:51.685085311Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/opt/venv/lib/python3.12/site-packages/google/cloud/storage/blob.py\", line 2700, in _prep_and_do_upload\n    created_json = self._do_upload(",
+
+    "timestamp": "2025-09-01T09:45:51.454539Z"
+
+  },
+
+  {
+
+    "insertId": "68b56b4f0006fd7957720111",
+
+    "labels": {
+
+      "instanceId": "0069c7a9885a4766d3af331cbf75dc840a314e649b16ee9bcaaae2f72dff30525736eb7838bc5a8c8ea80be55aa07e58c3e4c5aea44a5b865d8ff956b083f894f6096f7f809dfe76397595bb54ebc9"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T09:45:51.685085311Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/app/main.py\", line 684, in _handle_processing_with_lease_lock\n    blob.reload()\n  File \"/opt/venv/lib/python3.12/site-packages/google/cloud/storage/_helpers.py\", line 303, in reload\n    api_response = client._get_resource(",
+
+    "timestamp": "2025-09-01T09:45:51.458105Z"
+
+  },
+
+  {
+
+    "insertId": "68b56b4f0006efe35a28d6b0",
+
+    "labels": {
+
+      "instanceId": "0069c7a9885a4766d3af331cbf75dc840a314e649b16ee9bcaaae2f72dff30525736eb7838bc5a8c8ea80be55aa07e58c3e4c5aea44a5b865d8ff956b083f894f6096f7f809dfe76397595bb54ebc9"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T09:45:51.685085311Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/app/main.py\", line 701, in _handle_processing_with_lease_lock\n    blob.upload_from_string(new_lease_time, if_generation_match=0)\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 81, in inner\n    return func(*args, **kwds)",
+
+    "timestamp": "2025-09-01T09:45:51.454627Z"
+
+  },
+
+  {
+
+    "insertId": "68b56b4f0006fde446838638",
+
+    "labels": {
+
+      "instanceId": "0069c7a9885a4766d3af331cbf75dc840a314e649b16ee9bcaaae2f72dff30525736eb7838bc5a8c8ea80be55aa07e58c3e4c5aea44a5b865d8ff956b083f894f6096f7f809dfe76397595bb54ebc9"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T09:45:51.685085311Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/opt/venv/lib/python3.12/site-packages/google/cloud/storage/blob.py\", line 2700, in _prep_and_do_upload\n    created_json = self._do_upload(",
+
+    "timestamp": "2025-09-01T09:45:51.458212Z"
+
+  },
+
+  {
+
+    "insertId": "68b56b4f0006fe3b079a057b",
+
+    "labels": {
+
+      "instanceId": "0069c7a9885a4766d3af331cbf75dc840a314e649b16ee9bcaaae2f72dff30525736eb7838bc5a8c8ea80be55aa07e58c3e4c5aea44a5b865d8ff956b083f894f6096f7f809dfe76397595bb54ebc9"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T09:45:51.685085311Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/app/main.py\", line 701, in _handle_processing_with_lease_lock\n    blob.upload_from_string(new_lease_time, if_generation_match=0)\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 81, in inner\n    return func(*args, **kwds)",
+
+    "timestamp": "2025-09-01T09:45:51.458299Z"
+
+  },
+
+  {
+
+    "insertId": "68b56b4f0006ef2a86b0d501",
+
+    "labels": {
+
+      "instanceId": "0069c7a9885a4766d3af331cbf75dc840a314e649b16ee9bcaaae2f72dff30525736eb7838bc5a8c8ea80be55aa07e58c3e4c5aea44a5b865d8ff956b083f894f6096f7f809dfe76397595bb54ebc9"
+
+    },
+
+    "logName": "projects/thebestever/logs/run.googleapis.com%2Fstderr",
+
+    "receiveTimestamp": "2025-09-01T09:45:51.685085311Z",
+
+    "resource": {
+
+      "labels": {
+
+        "configuration_name": "knowledge-base-webhook",
+
+        "location": "us-central1",
+
+        "project_id": "thebestever",
+
+        "revision_name": "knowledge-base-webhook-00017-7nt",
+
+        "service_name": "knowledge-base-webhook"
+
+      },
+
+      "type": "cloud_run_revision"
+
+    },
+
+    "severity": "ERROR",
+
+    "textPayload": "Traceback (most recent call last):\n  File \"/app/main.py\", line 684, in _handle_processing_with_lease_lock\n    blob.reload()\n  File \"/opt/venv/lib/python3.12/site-packages/google/cloud/storage/_helpers.py\", line 303, in reload\n    api_response = client._get_resource(",
+
+    "timestamp": "2025-09-01T09:45:51.454442Z"
+
+  }
+
+]
+
+----------------------------------- 
+
+
+
+##### logs explorer ########  this should technically be the fulll logger
+
+DEFAULT 2025-09-01T09:45:51.454649Z ^^^^^^^^^^^^^^^^^^^
+DEFAULT 2025-09-01T09:45:51.454645Z return func(*args, **kwds)
+DEFAULT 2025-09-01T09:45:51.454641Z File "/usr/local/lib/python3.12/contextlib.py", line 81, in inner
+DEFAULT 2025-09-01T09:45:51.454637Z self.upload_from_file(
+DEFAULT 2025-09-01T09:45:51.454634Z File "/opt/venv/lib/python3.12/site-packages/google/cloud/storage/blob.py", line 3128, in upload_from_string
+DEFAULT 2025-09-01T09:45:51.454630Z ^^^^^^^^^^^^^^^^^^^
+ERROR 2025-09-01T09:45:51.454627Z Traceback (most recent call last): File "/app/main.py", line 701, in _handle_processing_with_lease_lock blob.upload_from_string(new_lease_time, if_generation_match=0) File "/usr/local/lib/python3.12/contextlib.py", line 81, in inner return func(*args, **kwds)
+DEFAULT 2025-09-01T09:45:51.454615Z During handling of the above exception, another exception occurred:
+DEFAULT 2025-09-01T09:45:51.454611Z google.resumable_media.common.InvalidResponse: ('Request failed with status code', 412, 'Expected one of', <HTTPStatus.OK: 200>)
+DEFAULT 2025-09-01T09:45:51.454607Z raise common.InvalidResponse(
+DEFAULT 2025-09-01T09:45:51.454604Z File "/opt/venv/lib/python3.12/site-packages/google/resumable_media/_helpers.py", line 108, in require_status_code
+DEFAULT 2025-09-01T09:45:51.454599Z _helpers.require_status_code(response, (http.client.OK,), self._get_status_code)
+DEFAULT 2025-09-01T09:45:51.454596Z File "/opt/venv/lib/python3.12/site-packages/google/resumable_media/_upload.py", line 125, in _process_response
+DEFAULT 2025-09-01T09:45:51.454592Z self._process_response(result)
+DEFAULT 2025-09-01T09:45:51.454589Z File "/opt/venv/lib/python3.12/site-packages/google/resumable_media/requests/upload.py", line 149, in retriable_request
+DEFAULT 2025-09-01T09:45:51.454585Z ^^^^^^
+DEFAULT 2025-09-01T09:45:51.454581Z response = func()
+DEFAULT 2025-09-01T09:45:51.454578Z File "/opt/venv/lib/python3.12/site-packages/google/resumable_media/requests/_request_helpers.py", line 155, in wait_and_retry
+DEFAULT 2025-09-01T09:45:51.454574Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+DEFAULT 2025-09-01T09:45:51.454571Z return _request_helpers.wait_and_retry(
+DEFAULT 2025-09-01T09:45:51.454567Z File "/opt/venv/lib/python3.12/site-packages/google/resumable_media/requests/upload.py", line 153, in transmit
+DEFAULT 2025-09-01T09:45:51.454563Z ^^^^^^^^^^^^^^^^
+DEFAULT 2025-09-01T09:45:51.454559Z response = upload.transmit(
+DEFAULT 2025-09-01T09:45:51.454556Z File "/opt/venv/lib/python3.12/site-packages/google/cloud/storage/blob.py", line 2007, in _do_multipart_upload
+DEFAULT 2025-09-01T09:45:51.454552Z ^^^^^^^^^^^^^^^^^^^^^^^^^^
+DEFAULT 2025-09-01T09:45:51.454548Z response = self._do_multipart_upload(
+DEFAULT 2025-09-01T09:45:51.454544Z File "/opt/venv/lib/python3.12/site-packages/google/cloud/storage/blob.py", line 2506, in _do_upload
+DEFAULT 2025-09-01T09:45:51.454541Z ^^^^^^^^^^^^^^^^
+ERROR 2025-09-01T09:45:51.454539Z Traceback (most recent call last): File "/opt/venv/lib/python3.12/site-packages/google/cloud/storage/blob.py", line 2700, in _prep_and_do_upload created_json = self._do_upload(
+DEFAULT 2025-09-01T09:45:51.454528Z During handling of the above exception, another exception occurred:
+DEFAULT 2025-09-01T09:45:51.454523Z google.api_core.exceptions.NotFound: 404 GET https://storage.googleapis.com/storage/v1/b/kblock/o/21-1_AM_M_MINUTE_ORDER.pdf.lock?projection=noAcl&prettyPrint=false: No such object: kblock/21-1_AM_M_MINUTE_ORDER.pdf.lock
+DEFAULT 2025-09-01T09:45:51.454519Z raise exceptions.from_http_response(response)
+DEFAULT 2025-09-01T09:45:51.454514Z File "/opt/venv/lib/python3.12/site-packages/google/cloud/_http/__init__.py", line 494, in api_request
+DEFAULT 2025-09-01T09:45:51.454511Z ^^^^^^^^
+DEFAULT 2025-09-01T09:45:51.454507Z result = target()
+DEFAULT 2025-09-01T09:45:51.454504Z File "/opt/venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+DEFAULT 2025-09-01T09:45:51.454500Z raise final_exc from source_exc
+DEFAULT 2025-09-01T09:45:51.454497Z File "/opt/venv/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+DEFAULT 2025-09-01T09:45:51.454493Z ^^^^^^^^^^^^^^^^^^^^
+DEFAULT 2025-09-01T09:45:51.454489Z next_sleep = _retry_error_helper(
+DEFAULT 2025-09-01T09:45:51.454484Z File "/opt/venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+DEFAULT 2025-09-01T09:45:51.454480Z ^^^^^^^^^^^^^
+DEFAULT 2025-09-01T09:45:51.454476Z return retry_target(
+DEFAULT 2025-09-01T09:45:51.454471Z File "/opt/venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+DEFAULT 2025-09-01T09:45:51.454467Z ^^^^^^
+DEFAULT 2025-09-01T09:45:51.454464Z return call()
+DEFAULT 2025-09-01T09:45:51.454461Z File "/opt/venv/lib/python3.12/site-packages/google/cloud/storage/_http.py", line 90, in api_request
+DEFAULT 2025-09-01T09:45:51.454457Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+DEFAULT 2025-09-01T09:45:51.454453Z return self._connection.api_request(
+DEFAULT 2025-09-01T09:45:51.454450Z File "/opt/venv/lib/python3.12/site-packages/google/cloud/storage/client.py", line 474, in _get_resource
+DEFAULT 2025-09-01T09:45:51.454445Z ^^^^^^^^^^^^^^^^^^^^^
+ERROR 2025-09-01T09:45:51.454442Z Traceback (most recent call last): File "/app/main.py", line 684, in _handle_processing_with_lease_lock blob.reload() File "/opt/venv/lib/python3.12/site-packages/google/cloud/storage/_helpers.py", line 303, in reload api_response = client._get_resource(
+DEFAULT 2025-09-01T09:45:51.454415Z : ('Request failed with status code', 412, 'Expected one of', <HTTPStatus.OK: 200>)
+DEFAULT 2025-09-01T09:45:51.454411Z }
+DEFAULT 2025-09-01T09:45:51.454408Z }
+DEFAULT 2025-09-01T09:45:51.454404Z ]
+DEFAULT 2025-09-01T09:45:51.454401Z }
+DEFAULT 2025-09-01T09:45:51.454398Z "location": "If-Match"
+DEFAULT 2025-09-01T09:45:51.454394Z "locationType": "header",
+DEFAULT 2025-09-01T09:45:51.454390Z "reason": "conditionNotMet",
+DEFAULT 2025-09-01T09:45:51.454387Z "domain": "global",
+DEFAULT 2025-09-01T09:45:51.454382Z "message": "At least one of the pre-conditions you specified did not hold.",
+DEFAULT 2025-09-01T09:45:51.454379Z {
+DEFAULT 2025-09-01T09:45:51.454374Z "errors": [
+DEFAULT 2025-09-01T09:45:51.454371Z "message": "At least one of the pre-conditions you specified did not hold.",
+DEFAULT 2025-09-01T09:45:51.454366Z "code": 412,
+DEFAULT 2025-09-01T09:45:51.454362Z "error": {
+DEFAULT 2025-09-01T09:45:51.454350Z ERROR:root:🚨 Failed lease lock handling: 412 POST https://storage.googleapis.com/upload/storage/v1/b/kblock/o?uploadType=multipart&ifGenerationMatch=0: {
+DEFAULT 2025-09-01T09:45:51.423562Z CRITICAL:root:[2025-09-01 09:45:51.423] 🚨 Step 0/8: FAILED - 🚨 Pipeline failed: name 'types' is not defined
+DEFAULT 2025-09-01T09:45:51.423334Z INFO:root:⏳ Initializing new Google GenAI client for Vertex AI...
+DEFAULT 2025-09-01T09:45:51.413948Z INFO:root:✅ Lease acquired for '21-1_AM_M_MINUTE ORDER.pdf'. Starting processing - Success!
+DEFAULT 2025-09-01T09:45:51.349577Z INFO:root:No active lease for '21-1_AM_M_MINUTE ORDER.pdf'. Attempting to acquire.
+DEFAULT 2025-09-01T09:45:51.331910Z INFO:root:No active lease for '21-1_AM_M_MINUTE ORDER.pdf'. Attempting to acquire.
+DEFAULT 2025-09-01T09:45:51.325235Z INFO:root:No active lease for '21-1_AM_M_MINUTE ORDER.pdf'. Attempting to acquire.
+DEFAULT 2025-09-01T09:45:51.043944Z INFO:root:⏳ Received CloudEvent for file: 21-1_AM_M_MINUTE ORDER.pdf (application/pdf)
+DEFAULT 2025-09-01T09:45:51.042904Z INFO:root:⏳ Received CloudEvent for file: 21-1_AM_M_MINUTE ORDER.pdf (application/pdf)
+DEFAULT 2025-09-01T09:45:51.010655Z INFO:root:⏳ Received CloudEvent for file: 21-1_AM_M_MINUTE ORDER.pdf (application/pdf)
