@@ -1,15 +1,3 @@
-# This Cloud Build pipeline builds a single container image and deploys it to two
-# distinct, specialized services, realizing the full 'Fragment and Consolidate' architecture.
-steps:
-# 1. Build the unified container image for both services.
-- name: 'gcr.io/kaniko-project/executor:latest'
-  id: 'Build Container Image'
-  args:
-  - '--destination=gcr.io/thebestever/gitlogger:latest'
-  - '--cache=true'
-  - '--cache-ttl=72h'
-
-# 2. Deploy the Ingestion Service to Cloud Run.
 # This service is optimized for high-concurrency, stateless request handling.
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   id: 'Deploy Ingestion Service'
